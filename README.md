@@ -21,15 +21,14 @@ We cleaned the data and performed statistical analysis to understand the relatio
 ### Key Visualizations
 **1. Correlation Heatmap**
 We analyzed the correlation between numeric features, specifically looking at how `Automation_Probability` correlates with various skills and AI exposure.
+<img width="930" height="790" alt="Correlation heatmap (numeric features" src="https://github.com/user-attachments/assets/4a26d78c-c988-4756-879d-cd52de124b4a" />
 
-![Correlation Heatmap](images/heatmap.png)
-*(Replace this text with your actual Heatmap screenshot from the project)*
 
 **2. Distribution of Risk Categories**
 A count plot was used to visualize the balance of the target classes (Low, Medium, High Risk).
+<img width="490" height="390" alt="Distribution of Automation Risk Categories" src="https://github.com/user-attachments/assets/3c5ad460-f421-41b5-a010-65f55c14995f" />
 
-![Risk Category Distribution](images/risk_distribution.png)
-*(Replace this text with your Bar Chart of Risk Categories)*
+
 
 ---
 
@@ -39,13 +38,15 @@ We applied **K-Means Clustering** to find hidden patterns in the job data withou
 ### 1. The Elbow Method
 We used the Elbow Method to determine the optimal number of clusters (`K`) by minimizing Inertia (Sum of Squared Distances).
 * **Optimal K:** 3
+<img width="708" height="466" alt="Elbow Method for Optimal Number of Clusters (K)" src="https://github.com/user-attachments/assets/7a79b465-c262-434f-aa99-21f4fbcc4c79" />
 
-![Elbow Method Plot](images/elbow_method.png)
+
 
 ### 2. 3D Cluster Visualization (PCA)
 To visualize the 3 clusters, we used **Principal Component Analysis (PCA)** to reduce the data dimensionality to 3 components, explaining **22.32%** of the variance.
+<img width="645" height="656" alt="3D PCA Visualization of K-Means Clusters" src="https://github.com/user-attachments/assets/52d4b805-52e3-4e70-827a-fc836a8e8f2f" />
 
-![3D PCA Clusters](images/pca_3d_clusters.png)
+
 
 ---
 
@@ -67,15 +68,17 @@ We evaluated models based on **Accuracy**, **Precision**, **Recall**, and **F1-S
 
 ### Confusion Matrix (Best Model)
 The **Random Forest** Classifier achieved the highest performance. Below is the confusion matrix showing its predictions vs. actual values.
+<img width="474" height="389" alt="Random_forest" src="https://github.com/user-attachments/assets/1b0dbce0-37e3-43dc-af60-13bb637fc4c3" />
 
-![Random Forest Confusion Matrix](images/rf_confusion_matrix.png)
+
 
 ---
 
 ## 🔑 Feature Importance
 Using the Random Forest model, we extracted the most important features contributing to AI Job Risk. This helps explain *why* certain jobs are classified as High Risk.
+<img width="790" height="489" alt="Top 10 most important features Random Forest" src="https://github.com/user-attachments/assets/ffadd70c-1c5f-4882-a0bb-87ca9c2903f4" />
 
-![Feature Importance](images/feature_importance.png)
+
 
 * **Top Insight:** Factors like `Automation_Probability_2030` and specific skill sets were the strongest predictors of job risk.
 

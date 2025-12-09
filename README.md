@@ -73,7 +73,13 @@ The **Random Forest** Classifier achieved the highest performance. Below is the 
 
 
 ---
+### Learning carve for Best Model (Random forest)
 
+<img width="789" height="489" alt="Learning curve" src="https://github.com/user-attachments/assets/b34184ce-03ad-4d0a-b1b3-edc83605b76d" />
+
+
+
+---
 ## 🔑 Feature Importance
 Using the Random Forest model, we extracted the most important features contributing to AI Job Risk. This helps explain *why* certain jobs are classified as High Risk.
 <img width="790" height="489" alt="Top 10 most important features Random Forest" src="https://github.com/user-attachments/assets/ffadd70c-1c5f-4882-a0bb-87ca9c2903f4" />
